@@ -8,6 +8,9 @@
     <link rel="icon" href="Images/unnamed.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,7 +23,7 @@
     -->
     <div class="container">
         <h1>tucarro</h1>
-        <ul class="nav nav-pills nav-fill nav-expand-lg bg-body-yellow" style="background-color: yellow;">
+        <ul class="nav nav-pills nav-fill nav-expand-lg bg-body-yellow">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">tucarro</a>
             </li>
@@ -45,65 +48,97 @@
             </li>
         </ul>
         <div class="row">
-            <div class="col">
-                <ul class="nav flex-column navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Marca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BMW</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mercedez-Benz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ford</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Audi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kia</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col">
-                <table class="table">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="col-sm-0 col-md-2">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Marca</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">BMW</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Mercedez-Benz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ford</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Audi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Kia</a>
+                                </li>
+                            </ul>
 
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-0 col-md-10">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Carros y camionetas más vendidos</th>
+                                <th scope="col">Vendidos</th>
+                                <th scope="col">Modelo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Toyota</td>
+                                <td>5000</td>
+                                <td>Prado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Mazda</td>
+                                <td>3800</td>
+                                <td>CX-30</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Ford</td>
+                                <td>2689</td>
+                                <td>Explorer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Renault</td>
+                                <td>2400</td>
+                                <td>Sandero</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Chevrolet</td>
+                                <td>2140</td>
+                                <td>Captiva</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Volkswagen</td>
+                                <td>1810</td>
+                                <td>Jetta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
         </div>
-
+        <h2>CARROS Y CAMIONETAS PUBLICADOS HOY</h2>
         <div class="row">
-            <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="col-sm-0 col-md-6 col-lg-4">
                 <div class="card" style="width: 19rem;">
                     <img src="Images/c2.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -114,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-0 col-md-6 col-lg-4">
                 <div class="card" style="width: 19rem;">
                     <img src="Images/c1.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -124,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-0  col-lg-4">
                 <div class="card" style="width: 19rem;">
                     <img src="Images/c3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
